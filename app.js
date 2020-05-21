@@ -1,4 +1,4 @@
-let ilkDizi = [
+let firstArray = [
   "sifir",
   "bir",
   "iki",
@@ -21,13 +21,12 @@ let yeniDizi = new Array();
 for (let i = 0; i < degeri; i++) {
   let deger = prompt("sayi:" + (i + 1));
   let lowerCaseDeger = deger.toLowerCase();
-  for (let j = 0; j < ilkDizi.length; j++) {
-    if (ilkDizi[j] === lowerCaseDeger) {
-      yeniDizi.push(ilkDizi.indexOf(lowerCaseDeger)); 
+  for (let j = 0; j < firstArray.length; j++) {
+    if (firstArray[j] === lowerCaseDeger) {
+      yeniDizi.push(firstArray.indexOf(lowerCaseDeger)); 
     }
   }
 }
-
 girilenSayi(degeri);
 sayiListesi(yeniDizi);
 toplam(yeniDizi);

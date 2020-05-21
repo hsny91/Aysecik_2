@@ -39,10 +39,7 @@ function enKucukSayi(diziAdi) {
     "Ayse'nin Girdigi En Kucuk Sayi: " + min;
 }
 function hataBulma(ilkDeger, diziAdi) {
-  //  cok dogru bir kodlama olmadi. Normalde ilkDizi ve yeniDizi karakterlerini tek tek karsilastirmayi denedim ancak oldukca uzun oldu bende bunu tecih ettim.
-  // Ayse herhangi bir sayiyi yanlis girdiginde; girilen deger diziye atanmiyor, normalde dizideki eleman sayisi ile Aysenin ilk girdigi sayi ayni olmasi gerekirken dizinin uzunlugu ilk girilen sayidan kucuk oluyor. Ayse yanlis yazi yazdiktan sonra dizilistesinde eksik olan sayiyi fark edip yanlisini bulmasini umdum.
   if (ilkDeger > diziAdi.length) {
-    // Burda Aysenin girdigi ilk deger ve dizinin uzunlugu karsilastiriliyor.(ilkdeger ayseden alinan ilk sayi, diziAdi girilen sayilarla olusturulan yeniDizi)
     document.getElementById("hataBulma").innerHTML = "AYSE HATALI SAYI GIRDIN";
   }
 }
