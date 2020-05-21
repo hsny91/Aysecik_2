@@ -10,13 +10,13 @@ function sayiListesi(pArray) {
     "Ayse'nin Girdigi Sayilar: " + pArray;
 }
 
-function toplam(diziAdi) {
-  let topSonuc = 0;
-  for (let i = 0; i < diziAdi.length; i++) {
-    topSonuc += Number(diziAdi[i]);
+function toplam(pArray) {
+  let sum = 0;
+  for (let i = 0; i < pArray.length; i++) {
+    sum += Number(pArray[i]);
   }
   document.getElementById("toplam").innerHTML =
-    "Ayse'nin Girdigi Sayilarin Toplami: " + topSonuc;
+    "Ayse'nin Girdigi Sayilarin Toplami: " + sum;
 }
 
 function carpim(diziAdi) {
