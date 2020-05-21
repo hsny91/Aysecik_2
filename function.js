@@ -34,9 +34,9 @@ function enBuyukSayi(pArray) {
 }
 
 function enKucukSayi(pArray) {
-  let min = Math.min.apply(Math, pArray);
+  let minNumber = Math.min.apply(Math, pArray);
   document.getElementById("enKucukSayi").innerHTML =
-    "Ayse'nin Girdigi En Kucuk Sayi: " + min;
+    "Ayse'nin Girdigi En Kucuk Sayi: " + minNumber;
 }
 function hataBulma(ilkDeger, pArray) {
   if (ilkDeger > pArray.length) {
