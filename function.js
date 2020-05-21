@@ -38,8 +38,8 @@ function enKucukSayi(pArray) {
   document.getElementById("enKucukSayi").innerHTML =
     "Ayse'nin Girdigi En Kucuk Sayi: " + minNumber;
 }
-function hataBulma(ilkDeger, pArray) {
-  if (ilkDeger > pArray.length) {
+function hataBulma(firstValue, pArray) {
+  if (firstValue > pArray.length) {
     document.getElementById("hataBulma").innerHTML = "AYSE HATALI SAYI GIRDIN";
   }
 }
