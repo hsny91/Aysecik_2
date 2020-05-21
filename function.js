@@ -19,36 +19,36 @@ function toplam(pArray) {
     "Ayse'nin Girdigi Sayilarin Toplami: " + sum;
 }
 
-function carpim(diziAdi) {
+function carpim(pArray) {
   let carpSonuc = 1;
-  for (let i = 0; i < diziAdi.length; i++) {
-    carpSonuc *= Number(diziAdi[i]);
+  for (let i = 0; i < pArray.length; i++) {
+    carpSonuc *= Number(pArray[i]);
   }
   document.getElementById("carpim").innerHTML =
     "Ayse'nin Girdigi Sayilarin Carpimi: " + carpSonuc;
 }
-function enBuyukSayi(diziAdi) {
-  let max = Math.max.apply(Math, diziAdi);
+function enBuyukSayi(pArray) {
+  let max = Math.max.apply(Math, pArray);
   document.getElementById("enBuyukSayi").innerHTML =
     "Ayse'nin Girdigi En Buyuk Sayi: " + max;
 }
 
-function enKucukSayi(diziAdi) {
-  let min = Math.min.apply(Math, diziAdi);
+function enKucukSayi(pArray) {
+  let min = Math.min.apply(Math, pArray);
   document.getElementById("enKucukSayi").innerHTML =
     "Ayse'nin Girdigi En Kucuk Sayi: " + min;
 }
-function hataBulma(ilkDeger, diziAdi) {
-  if (ilkDeger > diziAdi.length) {
+function hataBulma(ilkDeger, pArray) {
+  if (ilkDeger > pArray.length) {
     document.getElementById("hataBulma").innerHTML = "AYSE HATALI SAYI GIRDIN";
   }
 }
-function tekrarliSayilar(diziAdi) {
+function tekrarliSayilar(pArray) {
   let k = "";
-  for (let i = 0; i < diziAdi.length; i++) {
+  for (let i = 0; i < pArray.length; i++) {
     let sayac = 0;
-    for (let j = 0; j < diziAdi.length; j++) {
-      if (diziAdi[i] === diziAdi[j]) {
+    for (let j = 0; j < pArray.length; j++) {
+      if (pArray[i] === pArray[j]) {
         // if fonksiyonunda amac dizi icerisindeki elamanlari karsilastirmak ve ayni olanlari tespit etmek .
         sayac++;
       }
