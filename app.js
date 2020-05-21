@@ -17,21 +17,21 @@ let firstArray = [
   "onbeş"
 ]; 
 let degeri = prompt("Ayse Bir Sayi Girer Misin.");
-let yeniDizi = new Array();
+let newArray = new Array();
 for (let i = 0; i < degeri; i++) {
   let deger = prompt("sayi:" + (i + 1));
   let lowerCaseDeger = deger.toLowerCase();
   for (let j = 0; j < firstArray.length; j++) {
     if (firstArray[j] === lowerCaseDeger) {
-      yeniDizi.push(firstArray.indexOf(lowerCaseDeger)); 
+      newArray.push(newArray.indexOf(lowerCaseDeger)); 
     }
   }
 }
 girilenSayi(degeri);
-sayiListesi(yeniDizi);
-toplam(yeniDizi);
-carpim(yeniDizi);
-enBuyukSayi(yeniDizi);
-enKucukSayi(yeniDizi);
-tekrarliSayilar(yeniDizi); 
-hataBulma(degeri, yeniDizi);
+sayiListesi(newArray);
+toplam(newArray);
+carpim(newArray);
+enBuyukSayi(newArray);
+enKucukSayi(newArray);
+tekrarliSayilar(newArray); 
+hataBulma(degeri, newArray);
