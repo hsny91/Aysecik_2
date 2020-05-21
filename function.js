@@ -28,9 +28,9 @@ function carpim(pArray) {
     "Ayse'nin Girdigi Sayilarin Carpimi: " + carpSonuc;
 }
 function enBuyukSayi(pArray) {
-  let max = Math.max.apply(Math, pArray);
+  let maxNumber = Math.max.apply(Math, pArray);
   document.getElementById("enBuyukSayi").innerHTML =
-    "Ayse'nin Girdigi En Buyuk Sayi: " + max;
+    "Ayse'nin Girdigi En Buyuk Sayi: " + maxNumber;
 }
 
 function enKucukSayi(pArray) {
