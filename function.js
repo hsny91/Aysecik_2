@@ -1,13 +1,13 @@
-function girilenSayi(sayi) {
+function girilenSayi(pNumber) {
   // kac sayi girildi bilgisini veren fonksiyon
   document.getElementById("girilenSayi").innerHTML =
-    sayi + " Tane Sayi Girilmistir.";
+  pNumber + " Tane Sayi Girilmistir.";
 }
 
-function sayiListesi(diziAdi) {
+function sayiListesi(pArray) {
   // Girilen sayilarin listesini veren fonksiyon.
   document.getElementById("sayiListesi").innerHTML =
-    "Ayse'nin Girdigi Sayilar: " + diziAdi;
+    "Ayse'nin Girdigi Sayilar: " + pArray;
 }
 
 function toplam(diziAdi) {
