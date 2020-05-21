@@ -44,7 +44,7 @@ function hataBulma(firstValue, pArray) {
   }
 }
 function tekrarliSayilar(pArray) {
-  let k = "";
+  let result = "";
   for (let i = 0; i < pArray.length; i++) {
     let sayac = 0;
     for (let j = 0; j < pArray.length; j++) {
@@ -55,9 +55,9 @@ function tekrarliSayilar(pArray) {
     }
     if (sayac != 0) {
       // sayacimin sifir olmamasi durumu dizinin icinde kendini tekrar eden elemanlarin oldugunu gosterir. Bunlar "k" degiskenin icine atanir.
-      k += document.getElementById("tekrarliSayilar").innerHTML =
+      result += document.getElementById("tekrarliSayilar").innerHTML =
       pArray[i] + " Sayisindan " + sayac + " Tane Girilmistir.<br>";
     }
-    document.getElementById("tekrarliSayilar").innerHTML = k;
+    document.getElementById("tekrarliSayilar").innerHTML = result;
   }
 }
