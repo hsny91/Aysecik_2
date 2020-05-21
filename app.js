@@ -16,7 +16,7 @@ let ilkDizi = [
   "ondört",
   "onbeş"
 ]; 
-let degeri = prompt("Ayse Bir Sayi Girer misin.");
+let degeri = prompt("Ayse Bir Sayi Girer Misin.");
 let yeniDizi = new Array();
 for (let i = 0; i < degeri; i++) {
   let deger = prompt("sayi:" + (i + 1));
