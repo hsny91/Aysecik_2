@@ -55,8 +55,8 @@ function tekrarliSayilar(pArray) {
     }
     if (sayac != 0) {
       // sayacimin sifir olmamasi durumu dizinin icinde kendini tekrar eden elemanlarin oldugunu gosterir. Bunlar "k" degiskenin icine atanir.
-      result += document.getElementById("tekrarliSayilar").innerHTML =
-      pArray[i] + " Sayisindan " + sayac + " Tane Girilmistir.<br>";
+      result +=  pArray[i] + " Sayisindan " + sayac + " Tane Girilmistir.<br>";
+     
     }
     document.getElementById("tekrarliSayilar").innerHTML = result;
   }
