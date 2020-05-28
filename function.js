@@ -1,7 +1,7 @@
 function girilenSayi(pNumber) {
   // kac sayi girildi bilgisini veren fonksiyon
   document.getElementById("girilenSayi").innerHTML =
-  pNumber + " Tane Sayi Girilmistir.";
+    pNumber + " Tane Sayi Girilmistir.";
 }
 
 function sayiListesi(pArray) {
@@ -27,6 +27,7 @@ function carpim(pArray) {
   document.getElementById("carpim").innerHTML =
     "Ayse'nin Girdigi Sayilarin Carpimi: " + carpSonuc;
 }
+
 function enBuyukSayi(pArray) {
   let maxNumber = Math.max.apply(Math, pArray);
   document.getElementById("enBuyukSayi").innerHTML =
@@ -38,11 +39,13 @@ function enKucukSayi(pArray) {
   document.getElementById("enKucukSayi").innerHTML =
     "Ayse'nin Girdigi En Kucuk Sayi: " + minNumber;
 }
+
 function hataBulma(firstValue, pArray) {
   if (firstValue > pArray.length) {
     document.getElementById("hataBulma").innerHTML = "AYSE HATALI SAYI GIRDIN";
   }
 }
+
 function tekrarliSayilar(pArray) {
   let result = "";
   for (let i = 0; i < pArray.length; i++) {
@@ -55,8 +58,7 @@ function tekrarliSayilar(pArray) {
     }
     if (sayac != 0) {
       // sayacimin sifir olmamasi durumu dizinin icinde kendini tekrar eden elemanlarin oldugunu gosterir. Bunlar "k" degiskenin icine atanir.
-      result +=  pArray[i] + " Sayisindan " + sayac + " Tane Girilmistir.<br>";
-     
+      result += pArray[i] + " Sayisindan " + sayac + " Tane Girilmistir.<br>";
     }
     document.getElementById("tekrarliSayilar").innerHTML = result;
   }
